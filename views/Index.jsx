@@ -18,7 +18,7 @@ class Index extends React.Component {
                             return (
                             <a href={`/DNDCS/${avatar._id}`}><div className='character-info-box'> 
                                 <h2>{avatar.name}</h2>
-                                <h3>Role: {avatar.role}</h3>
+                                <h3>Role: {avatar.role.toUpperCase()}</h3>
                                 <h3>Race: {avatar.race}</h3>
                                 <h3>Current Level: {avatar.level}</h3>
                                 <form className="delete-container" action={`/DNDCS/${avatar._id}?_method=DELETE`} method="POST">
