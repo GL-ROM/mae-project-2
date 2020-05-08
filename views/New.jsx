@@ -1,4 +1,5 @@
 const React = require('react');
+const Default = require('./Default');
 
 class New extends React.Component {
     render(){
@@ -6,7 +7,10 @@ class New extends React.Component {
 
         return (
             <Default>
-                <h1>New Page</h1>
+                <div className="page-banner">
+                    <h1>Create a New Character</h1>
+                    <a href="/DNDCS"><button>Home Page</button></a>
+                </div>
             </Default>
         )
     }

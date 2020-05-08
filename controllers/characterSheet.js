@@ -7,12 +7,71 @@ const CharacterSheet = require('../models/characterSheet.js'); // .. to get up t
 //Routes
 
 ////////////////
+//// Seed GET /DNDCS/seed
+////////////////
+router.get('/seed', (req, res) => {
+    CharacterSheet.create([
+        {
+            name: 'Forlan Grismen',
+            role: 'fighter',
+            race: 'gnome',
+            level: 1,
+            stats: {
+                strength: 12,
+                dexterity: 10,
+                constitution: 12,
+                intelligence: 10,
+                wisdom: 10,
+                charisma: 10
+            }
+        },
+        {
+            name: 'Duncan Molach',
+            role: 'Wizard',
+            race: 'Human',
+            level: 2,
+            stats: {
+                strength: 9,
+                dexterity: 12,
+                constitution: 10,
+                intelligence: 13,
+                wisdom: 13,
+                charisma: 10
+            }
+        },
+        {
+            name: 'Morphram Brimblebrew',
+            role: 'Cleric',
+            race: 'Dwarf',
+            level: 2,
+            stats: {
+                strength: 14,
+                dexterity: 8,
+                constitution: 15,
+                intelligence: 11,
+                wisdom: 13,
+                charisma: 8
+            }
+        }
+    ],(err, data)=>{
+        res.redirect('/DNDCS');
+    });
+});
+
+////////////////
 //// Index GET /DNDCS
 ////////////////
 router.get('/', (req, res) => {
-    CharacterSheet.find({},(error, allCharacter) =>{
-        res.render('Index', {character: allCharacter});
+    CharacterSheet.find({},(error, allCharacters) =>{
+        res.render('Index', {character: allCharacters});
     });
+});
+
+////////////////
+//// New GET /DNDCS/new
+////////////////
+router.get('/new', (req, res) => {
+    res.render('New');
 });
 
 ////////////////
@@ -22,13 +81,6 @@ router.get('/:id', (req, res) => {
     CharacterSheet.findById(req.params.id, (err, foundCharacter) => {
         res.render('Show', {character: foundCharacter});
     });
-});
-
-////////////////
-//// New GET /DNDCS/new
-////////////////
-router.get('/new', (req, res) => {
-    res.render('New');
 });
 
 ////////////////

@@ -5,7 +5,8 @@ class Default extends React.Component {
         return (
             <html>
                 <head>
-                    <link rel="stylesheet" href="/main.css"/>
+                    <script src="/js/methods.js"></script>
+                    <link rel="stylesheet" href="/css/main.css"/>
                     <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
                     <title>DnD Character Sheet</title>
                 </head>
