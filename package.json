@@ -1,7 +1,6 @@
 {
   "name": "dndcharactersheet",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,15 @@
     "mongoose": "^5.9.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabRom-187/mae-project-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GabRom-187/mae-project-2/issues"
+  },
+  "homepage": "https://github.com/GabRom-187/mae-project-2#readme",
+  "description": ""
 }
