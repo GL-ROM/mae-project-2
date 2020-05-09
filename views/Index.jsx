@@ -23,7 +23,7 @@ class Index extends React.Component {
                                 <h3>Current Level: {avatar.level}</h3>
                                 <form className="delete-container" action={`/DNDCS/${avatar._id}?_method=DELETE`} method="POST">
                                         {/* create a link to edit route */}
-                                        <input type="submit" value="Delete Character"/>
+                                        <input className="button" type="submit" value="Delete Character"/>
                                 </form>
                             </div></a>   
                             )

@@ -18,7 +18,7 @@ class Show extends React.Component {
                 <div className="page-banner">
                     <h1>Character Sheet</h1>
                     <a href="/DNDCS"><button>Home Page</button></a>
-                    <a href={`/DNDCS/${_id}/edit`}><button>Edit this character</button></a>
+                    <a href={`/DNDCS/${_id}/edit`}><button>Edit This Character</button></a>
                 </div>
                 <div className="character-sheet">
                     <div className="character-sheet-header">
@@ -33,7 +33,7 @@ class Show extends React.Component {
                     </div>
                     <div className="character-sheet-stats">
                         <div className="hp-container">
-                            <div className="hp-container-currenthp">Current HP:<input type="number" value={hpCheck(role, parseInt(level))} min="0" max={hpCheck(role, parseInt(level))}/> / Max HP: {hpCheck(role, parseInt(level))}</div>
+                            <div className="hp-container-currenthp">Current HP: <input type="number" value={hpCheck(role, parseInt(level))} min="0" max={hpCheck(role, parseInt(level))}/> / Max HP: {hpCheck(role, parseInt(level))}</div>
                         </div>
                         <div className="initiative-ac-container">
                             <div className="intiative-box">
@@ -81,7 +81,7 @@ class Show extends React.Component {
                         </div>
                     </div>
                     <div className="character-skills-equipment-container">
-                        <div className="character-skills-container">
+                        <div className="character-skills-box">
                             <table className="character-skills">
                                 <tr>
                                     <th>PROF</th>
@@ -199,8 +199,8 @@ class Show extends React.Component {
                                 </tr>
                             </table>
                         </div>
-                        <div className="equipment-container">
-
+                        <div className="character-equipment-box">
+                            <h2>Equipment</h2>
                         </div>
                     </div>
                     

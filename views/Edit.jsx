@@ -19,7 +19,7 @@ class Edit extends React.Component {
                         <label htmlFor="race">Race: </label>
                         <input type="text" name="race" id="race" defaultValue={race}/>
                         <label htmlFor="role">Role/Class: </label>
-                        <select name="role" id="role" defaultValue={role}>
+                        <select name="role" id="role" defaultValue={role.toLowerCase()}>
                             <option value="barbarian">Barbarian</option>
                             <option value="bard">Bard</option>
                             <option value="cleric">Cleric</option>
@@ -38,17 +38,17 @@ class Edit extends React.Component {
                     </div>
                     <div className="stats-box">
                         <div>Character Stats</div>
-                        <label htmlFor="strength">Strength</label>
+                        <label htmlFor="strength">Strength: </label>
                         <input type="number" name="stats.strength" id="strength" min="1" max="20" defaultValue={stats.strength}/>
-                        <label htmlFor="dexterity">Dexterity</label>
+                        <label htmlFor="dexterity">Dexterity: </label>
                         <input type="number" name="stats.dexterity" id="dexterity" min="1" max="20" defaultValue={stats.dexterity}/>
-                        <label htmlFor="constitution">Constitution</label>
+                        <label htmlFor="constitution">Constitution: </label>
                         <input type="number" name="stats.constitution" id="constitution" min="1" max="20" defaultValue={stats.constitution}/>
-                        <label htmlFor="intelligence">Intelligence</label>
+                        <label htmlFor="intelligence">Intelligence: </label>
                         <input type="number" name="stats.intelligence" id="intelligence" min="1" max="20" defaultValue={stats.intelligence}/>
-                        <label htmlFor="wisdom">Wisdom</label>
+                        <label htmlFor="wisdom">Wisdom: </label>
                         <input type="number" name="stats.wisdom" id="wisdom" min="1" max="20" defaultValue={stats.wisdom}/>
-                        <label htmlFor="charisma">Charisma</label>
+                        <label htmlFor="charisma">Charisma: </label>
                         <input type="number" name="stats.charisma" id="charisma" min="1" max="20" defaultValue={stats.charisma}/>
                     </div>
 

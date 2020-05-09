@@ -1,3 +1,204 @@
 * {
-    border: purple 1px solid;
+    /* border: purple 1px solid; */
+    /* font-family: 'Cinzel', serif; */
+    /* font-family: 'Cinzel Decorative', cursive; */
 }
+
+/********************************/
+/* Index Page Design and Layout */
+/********************************/
+body {
+    font-family: 'Cinzel Decorative', cursive;
+}
+.page-banner {
+    text-align: center;
+    background-color: rgb(109, 28, 28);
+    color: white;
+    text-shadow: 3px 3px black;
+    border: 4px solid black;
+    padding-bottom: 5px;
+}
+
+button, .button {
+    font-family: 'Oswald', sans-serif;
+    border: black 3px solid;
+    border-radius: 5px;
+    background-color: rgb(37, 60, 110);
+    color: white;
+}
+
+button:hover, .button:hover{
+    border:gray 3px solid;
+    font-weight: bolder;
+    background-color: white;
+    color: rgb(37, 60, 110);
+    cursor: pointer;
+}
+
+.character-sheet-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+    width: auto;
+    height: 400px;
+    background-image: url('/images/TavernBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.character-sheet-container a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 250px;
+    height: 175px;
+    margin: 10px;
+}
+
+.character-info-box {
+    background-color: rgba(87, 87, 87, 0.5);
+    text-align: center;
+    border: black solid 4px;
+    border-radius: 10px;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 2vh;
+}
+
+.character-info-box:hover {
+    background-color: rgb(161, 160, 160);
+    box-shadow: 5px 5px 5px rgba(255, 217, 0, 0.404);
+    border: solid 4px goldenrod;
+
+}
+
+/********************************/
+/* Show Page Design and Layout  */
+/********************************/
+
+.character-sheet-header {
+    margin: 5px;
+    padding: 5px;
+    border: black solid 4px;
+    border-radius: 3px;
+    color: white;
+    background-color: slategray;
+}
+
+.character-name {
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.character-sheet-stats {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hp-container {
+    padding: 5px;
+    color: white;
+    background-color:firebrick;
+    border: solid black 3px;
+    border-radius: 3px;
+
+}
+
+.initiative-ac-container, .initiative-label {
+    font-family: 'Oswald', sans-serif;
+}
+
+.stat-name {
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.initiative-label, .armor-class-label {
+    color: white;
+    background-color: rgb(112, 128, 144, .85);
+    border-radius: 8px;
+}
+
+.stat-modifier, .stat-proficiency-value, .initiative-value, .armor-class-value {
+    font-size: xx-large;
+}
+
+.armor-class-value {
+    color: rgba(87, 87, 87);
+    text-shadow: 1px 1px silver;
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+
+.stat-container {
+    border: solid 3px black;
+    border-radius: 5px;
+    padding: 3px;
+    width: 10%;
+}
+
+.stat-value {
+    width: 50px;
+    margin: 0 auto;
+    border: red 2px dotted;
+    border-radius: 50%;
+    
+}
+
+.character-skills-equipment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.character-skills {
+    margin: 0 auto; 
+}
+
+.character-skills-box, .character-equipment-box {
+    border: black 3px solid;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+}
+
+/********************************/
+/* Forms Design and Layout      */
+/********************************/
+
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.basic-info-box, .stats-box  {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    border: solid black 3px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+input {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
