@@ -30,6 +30,9 @@ class Index extends React.Component {
                         })
                     }
                 </div>
+                <footer>
+                    <a href="https://company.wizards.com/">Thanks to Wizards of the Coast!</a>
+                </footer>
             </Default>
         )
     }
